@@ -1,17 +1,8 @@
 package book
 
-//type Quality string
-
-//const (
-//	Good   Quality = "Good"
-//	Medium Quality = "Medium"
-//	Bad    Quality = "Bad"
-//)
-
 type Book struct {
-	Name   string
-	Author string
-	//condition Quality
+	Name   string `json:"name"`
+	Author string `json:"author"`
 }
 
 type Books []Book

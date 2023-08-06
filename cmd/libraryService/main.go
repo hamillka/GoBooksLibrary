@@ -27,6 +27,7 @@ func main() {
 	db, err := sqlite.New(cfg.StoragePath)
 	if err != nil {
 		log.Error("Failed to init storage", err)
+		os.Exit(1)
 	}
 
 	log.Debug("Storage is initialized")
